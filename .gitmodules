@@ -1,0 +1,3 @@
+[submodule "Moist/vendor/spdlog"]
+	path = Moist/vendor/spdlog
+	url = https://github.com/gabime/spdlog
