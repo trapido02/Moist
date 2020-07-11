@@ -10,3 +10,5 @@
 #else
 	#error Moist Engine only supports Windows!
 #endif // MS_PLATFORM_WINDOWS
+
+#define BIT(x) (1 << x)
