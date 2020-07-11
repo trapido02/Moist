@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Moist {
 
 	class MOIST_API MouseMovedEvent : public Event {

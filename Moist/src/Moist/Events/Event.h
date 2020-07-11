@@ -2,9 +2,6 @@
 
 #include "Moist/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Moist {
 
 	enum class EventType {

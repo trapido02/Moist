@@ -1,3 +1,4 @@
+#include "mspch.h"
 #include "Application.h"
 
 #include "Moist/Events/ApplicationEvent.h"

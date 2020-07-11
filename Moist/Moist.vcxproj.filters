@@ -4,6 +4,9 @@
     <Filter Include="Moist">
       <UniqueIdentifier>{F10AAF0D-5D1F-D7BE-26A1-7A1E9274D3EF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Moist\Events">
+      <UniqueIdentifier>{B5DD8EBA-A140-1E5F-4AC6-56153608EAE1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Moist.h" />
@@ -16,13 +19,22 @@
     <ClInclude Include="src\Moist\EntryPoint.h">
       <Filter>Moist</Filter>
     </ClInclude>
+    <ClInclude Include="src\Moist\Events\ApplicationEvent.h">
+      <Filter>Moist\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Moist\Events\Event.h">
+      <Filter>Moist\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Moist\Events\KeyEvent.h">
+      <Filter>Moist\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Moist\Events\MouseEvent.h">
+      <Filter>Moist\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Moist\Log.h">
       <Filter>Moist</Filter>
     </ClInclude>
-    <ClInclude Include="src\Moist\Events\Event.h" />
-    <ClInclude Include="src\Moist\Events\ApplicationEvent.h" />
-    <ClInclude Include="src\Moist\Events\KeyEvent.h" />
-    <ClInclude Include="src\Moist\Events\MouseEvent.h" />
+    <ClInclude Include="src\mspch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Moist\Application.cpp">
@@ -31,5 +43,6 @@
     <ClCompile Include="src\Moist\Log.cpp">
       <Filter>Moist</Filter>
     </ClCompile>
+    <ClCompile Include="src\mspch.cpp" />
   </ItemGroup>
 </Project>
