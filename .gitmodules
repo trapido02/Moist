@@ -1,3 +1,6 @@
 [submodule "Moist/vendor/spdlog"]
 	path = Moist/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Moist/vendor/GLFW"]
+	path = Moist/vendor/GLFW
+	url = https://github.com/trapido02/glfw

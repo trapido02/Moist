@@ -1,5 +1,7 @@
 #pragma once
 
+#include "mspch.h"
+
 #include "Moist/Core.h"
 
 namespace Moist {

@@ -12,6 +12,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Moist/Log.h"
+
 #ifdef MS_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif

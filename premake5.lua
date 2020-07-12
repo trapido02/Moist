@@ -10,6 +10,11 @@ workspace "Moist"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Moist/vendor/GLFW/include"
+
+include "Moist/vendor/GLFW"
+
 project "Moist"
 	location "Moist"
 	kind "SharedLib"
@@ -29,6 +34,12 @@ project "Moist"
 	includedirs {
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links {
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

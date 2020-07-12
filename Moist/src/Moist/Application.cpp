@@ -8,7 +8,7 @@ namespace Moist {
 
 	// Constructor
 	Application::Application() {
-
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	// Destructor
@@ -18,10 +18,10 @@ namespace Moist {
 
 	// Main application loop
 	void Application::Run() {
-		WindowResizeEvent e(1280, 720);
-		MS_TRACE(e);
+		while (m_Running) {
 
-		while (true);
+			m_Window->OnUpdate();
+		}
 	}
 
 }
