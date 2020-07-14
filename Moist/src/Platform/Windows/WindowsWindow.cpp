@@ -111,12 +111,12 @@ namespace Moist {
 		glfwSetCursorPosCallback(m_Window, [](GLFWwindow* window, double xPos, double yPos) {
 			WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
 
-			MouseScrolledEvent event((float)xPos, (float)yPos);
+			MouseMovedEvent event((float)xPos, (float)yPos);
 			data.EventCallback(event);
 		});
 
 	}
-
+	
 	void WindowsWindow::Shutdown() {
 		glfwDestroyWindow(m_Window);
 	}
