@@ -58,14 +58,17 @@ project "Moist"
 
 	filter "configurations:Debug"
 		defines "MS_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "MS_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "MS_DIST"
+		buildoptions "/MD"
 		optimize "On"
 
 
@@ -102,12 +105,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "MS_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "MS_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "MS_DIST"
+		buildoptions "/MD"
 		optimize "On"

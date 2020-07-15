@@ -1,9 +1,8 @@
 #pragma once
 
-// Application
+// These includes are used by the sandbox
 #include "Moist/Application.h"
-
-// Log
+#include "Moist/Layer.h"
 #include "Moist/Log.h"
 
 // Entry Point
