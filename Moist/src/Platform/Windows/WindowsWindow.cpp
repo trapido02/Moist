@@ -4,7 +4,8 @@
 #include "Moist/Events/ApplicationEvent.h"
 #include "Moist/Events/KeyEvent.h"
 #include "Moist/Events/MouseEvent.h"
-#include "Moist/Events/Event.h"
+
+#include <glad/glad.h>
 
 namespace Moist {
 
@@ -42,6 +43,8 @@ namespace Moist {
 
 		m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
 		glfwMakeContextCurrent(m_Window);
+		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+		MS_CORE_ASSERT(status, "Failed to initialize Glad!")
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		SetVSync(true);
 

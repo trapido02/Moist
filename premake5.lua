@@ -12,8 +12,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
 IncludeDir["GLFW"] = "Moist/vendor/GLFW/include"
+IncludeDir["Glad"] = "Moist/vendor/Glad/include"
 
 include "Moist/vendor/GLFW"
+include "Moist/vendor/Glad"
 
 project "Moist"
 	location "Moist"
@@ -34,11 +36,13 @@ project "Moist"
 	includedirs {
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links {
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -49,7 +53,8 @@ project "Moist"
 
 		defines {
 			"MS_PLATFORM_WINDOWS",
-			"MS_BUILD_DLL"
+			"MS_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands {
