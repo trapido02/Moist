@@ -4,3 +4,6 @@
 [submodule "Moist/vendor/GLFW"]
 	path = Moist/vendor/GLFW
 	url = https://github.com/trapido02/glfw
+[submodule "Moist/vendor/imgui"]
+	path = Moist/vendor/imgui
+	url = https://github.com/trapido02/imgui

@@ -7,7 +7,7 @@ public:
 	}
 
 	void OnUpdate() override {
-		MS_INFO("ExampleLayer::Update");
+		//MS_INFO("ExampleLayer::Update");
 	}
 
 	void OnEvent(Moist::Event& event) override {
@@ -19,6 +19,7 @@ class Sandbox : public Moist::Application {
 public:
 	Sandbox() {
 		PushLayer(new ExampleLayer());
+		PushOverlay(new Moist::ImGuiLayer());
 	}
 
 	~Sandbox() {

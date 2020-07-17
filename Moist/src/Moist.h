@@ -4,6 +4,7 @@
 #include "Moist/Application.h"
 #include "Moist/Layer.h"
 #include "Moist/Log.h"
+#include "Moist/ImGui/ImGuiLayer.h"
 
 // Entry Point
 #include "Moist/EntryPoint.h"
