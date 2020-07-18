@@ -11,6 +11,10 @@
 	#error Moist Engine only supports Windows!
 #endif
 
+#ifdef MS_DEBUG
+	#define MS_ENABLE_ASSERTS
+#endif
+
 #ifdef MS_ENABLE_ASSERTS
 	#define MS_ASSERT(x, ...) { if(!(x)) { MS_ERROR("Assertion Failed: {1}", __VA_ARGS__); __debugbreak(); } }
 	#define MS_CORE_ASSERT(x, ...) { if(!(x)) { MS_CORE_ERROR("Assertion Failed: {1}", __VA_ARGS__); __debugbreak();  } }
